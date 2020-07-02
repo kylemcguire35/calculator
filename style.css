@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: black;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.display {
+    position: relative;
+    height: 21rem;
+    margin: auto;
+    width: 35rem;
+    font-size: 4rem;
+    word-wrap: break-word;
+}
+
+h1 {
+    position: absolute;
+    text-align: right;
+    max-width: 35rem;
+    bottom: 0.5rem;
+    right: 0rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 36rem;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.btn {
+    display: flex;
+    height: 8rem;
+    width: 8rem;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    border-radius: 4rem;
+}
+
+.btn:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.gray {
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+.dark-gray {
+    background-color: rgb(74, 74, 74);
+}
+
+.orange {
+    background-color: orange;
+}
+
+.orange:hover {
+    filter: none;
+    background-color: rgb(255, 201, 102);
+}
+
+#ac {
+    grid-column: 1 / span 2;
+    width: 17rem;
+}
+
+#zero {
+    grid-row: 5 / 6;
+    grid-column: 1 / span 2;
+    width: 17rem;
+    justify-content: left;
+    padding-left: 3rem;
+}
+
+#divide {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+
+#times {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+}
+
+#minus {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
+
+#plus {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+}
+
+#equals {
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+}
